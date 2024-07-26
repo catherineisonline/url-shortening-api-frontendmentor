@@ -2,13 +2,13 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.19.2",
+    "http-proxy-middleware": "^3.0.0",
     "node-fetch": "^3.3.2"
   },
   "scripts": {
-    "inject-env": "node inject-env.js",
-    "build": "npm run inject-env && webpack --mode production",
     "start": "live-server",
-    "deploy": "gh-pages -d ."
+    "deploy": "gh-pages -d .",
+    "server": "node server.mjs"
   },
   "devDependencies": {
     "@types/node": "^20.14.12",
